@@ -1,0 +1,31 @@
+{
+  "name": "rkjobplacement",
+  "version": "1.0.0",
+  "description": "placemnt services ",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anulmehta48/rkjobplacement.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anulmehta48/rkjobplacement/issues"
+  },
+  "homepage": "https://github.com/anulmehta48/rkjobplacement#readme",
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.1.10",
+    "parcel": "^2.15.2"
+  },
+  "dependencies": {
+    "lucide-react": "^0.515.0",
+    "react": "18.2",
+    "react-dom": "18.2",
+    "react-router-dom": "^6.6.2",
+    "tailwindcss": "^4.0.8"
+  }
+}
