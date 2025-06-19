@@ -51,13 +51,13 @@ const Body = () => {
       name: "David Chen",
       title: "CEO, Innovation Corp",
       quote:
-        "TalentMSH delivered exceptional results. They understood our culture and found the perfect leadership team.",
+        "RK JOB Placement delivered exceptional results. They understood our culture and found the perfect leadership team.",
     },
     {
       name: "Sarah Williams",
       title: "HR Director, Global Industries",
       quote:
-        "Professional, efficient, and results-driven. TalentMSH exceeded our expectations in every way.",
+        "Professional, efficient, and results-driven. RK JOB Placement exceeded our expectations in every way.",
     },
     {
       name: "Michael Johnson",
@@ -108,8 +108,8 @@ const Body = () => {
                 About RK JOB Placement
               </h2>
               <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-                TalentMSH is a premier executive search and talent solutions
-                firm dedicated to connecting exceptional leaders with
+                RK JOB Placement is a premier executive search and talent
+                solutions firm dedicated to connecting exceptional leaders with
                 organizations that value excellence and innovation.
               </p>
               <p className="text-lg text-gray-600 mb-8 leading-relaxed">
@@ -254,7 +254,7 @@ const Body = () => {
                 className="max-h-52 object-contain mb-6"
               />
               <a
-                href="https://forms.gle/5eqSGb5FvqsS6g8z8"
+                href="https://forms.gle/5QnBku5SRv4yvTDr7"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-blue-600 text-white font-semibold py-3 px-6 rounded-md hover:bg-blue-700 transition"
@@ -272,7 +272,7 @@ const Body = () => {
                   <div>
                     <strong>Email</strong>
                     <br />
-                    info@talentmsh.com
+                    info@rkjobplacement.com
                   </div>
                 </li>
                 <li className="flex items-start gap-3">
@@ -280,7 +280,7 @@ const Body = () => {
                   <div>
                     <strong>Phone</strong>
                     <br />
-                    +1 (555) 123-4567
+                    +91 7845128956
                   </div>
                 </li>
                 <li className="flex items-start gap-3">
@@ -292,7 +292,7 @@ const Body = () => {
                     <br />
                     Suite 500
                     <br />
-                    New York, NY 10001
+                    New Delhi 405214
                   </div>
                 </li>
               </ul>
