@@ -5,7 +5,7 @@ const Title = () => {
       <a href="/">
         <img className=" w-20  " src={LOGO_IMG} alt="logo" />
       </a>
-      <h1 className="text-3xl mt-5  text-[#484746]">Job Placement Services</h1>
+      <h1 className="text-3xl mt-5 font-semibold text-[#0279ba]">Job Placement Services</h1>
     </div>
   );
 };
@@ -16,7 +16,7 @@ const Header = () => {
         <div className=" flex justify-between ">
           <Title />
           <div className="">
-            <ul className="flex gap-6 ">
+            <ul className="flex gap-6  ">
               <a href="#home">
                 <li className="p-5 cursor-pointer">Home</li>
               </a>
@@ -30,7 +30,7 @@ const Header = () => {
                 <li className="p-5 cursor-pointer">Contact</li>
               </a>
               <a href="mailto:rkjobpl7@gmail.com">
-                <button className="px-8 py-2.5 text-lg mt-3 bg-[#f48734] text-white cursor-pointer">
+                <button className="px-8 py-2.5 text-lg mt-3 bg-[#fc9704] text-white cursor-pointer">
                   Get Started
                 </button>
               </a>

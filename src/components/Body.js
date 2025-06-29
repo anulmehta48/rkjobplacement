@@ -1,17 +1,22 @@
+import { Main_IMG_1, Main_IMG_2, Main_IMG_3, Main_IMG_4 } from "../config";
 import ImageCrousel from "./Crousel";
+// import Testimonial from "./public/rkjobplacement.pdf"
 import {
-  Users,
   NotebookPen,
   IndianRupee,
-  BriefcaseMedical,
-  Award,
-  Target,
-  Globe,
   CheckCircle,
   Star,
   Mail,
   Phone,
   MapPin,
+  ChartNoAxesCombined,
+  HeartHandshake,
+  IdCardLanyard,
+  Blocks,
+  Boxes,
+  SquareChartGantt,
+  Stethoscope,
+  FileUser,
 } from "lucide-react";
 const Body = () => {
   const features = [
@@ -25,67 +30,128 @@ const Body = () => {
 
   const services = [
     {
-      icon: <NotebookPen size={40} className="text-blue-600" />,
-      title: "Project Planning & Feasibility",
+      icon: <NotebookPen size={40} className="text-[#fc9704]" />,
+      title: "Detailed Project Reports",
       description:
-        "We create detailed project reports and perform feasibility studies to ensure your healthcare venture starts on solid ground.",
+        "We prepare comprehensive project reports with clear data and analysis to guide your healthcare initiatives effectively.",
     },
     {
-      icon: <IndianRupee size={40} className="text-blue-600" />,
-      title: " Financial & Manpower Planning",
+      icon: <ChartNoAxesCombined size={40} className="text-[#fc9704]" />,
+      title: " Feasibility Analysis",
       description:
-        "Get expert support with budgeting, financial projections, and planning your medical team structure for smooth operations.",
+        "Our feasibility studies assess your project’s practicality, ensuring it is achievable and beneficial in the current market..",
     },
     {
-      icon: <Target size={40} className="text-blue-600" />,
-      title: "Operations & Vendor Management",
+      icon: <IndianRupee size={40} className="text-[#fc9704]" />,
+      title: "Financial Projections",
       description:
-        "We streamline your hospital or clinic’s day-to-day operations, including vendor coordination and inventory control.",
+        "We deliver accurate financial forecasts to help you plan budgets and manage resources efficiently for long-term success.",
     },
     {
-      icon: <BriefcaseMedical size={40} className="text-blue-600" />,
-      title: "Doctor & Staff Placement",
+      icon: <HeartHandshake size={40} className="text-[#fc9704]" />,
+      title: "Business Development Support",
       description:
-        "We help you find and engage qualified doctors and medical staff, tailored to your specific requirements and budget.",
+        "Our team provides strategic support to grow and expand your medical business with confidence and clarity",
+    },
+    {
+      icon: <IdCardLanyard size={40} className="text-[#fc9704]" />,
+      title: " Manpower Planning",
+      description:
+        "We analyze your staffing needs and structure roles effectively to ensure optimal performance in your healthcare facility.",
+    },
+    {
+      icon: <Blocks size={40} className="text-[#fc9704]" />,
+      title: "Project Development",
+      description:
+        "From concept to execution, we guide you through every stage of medical project development to achieve operational excellence.",
+    },
+    {
+      icon: <Boxes size={40} className="text-[#fc9704]" />,
+      title: "Operational Process Management & Support",
+      description:
+        "We streamline processes and provide ongoing support to improve efficiency and maintain high-quality healthcare services.",
+    },
+    {
+      icon: <SquareChartGantt size={40} className="text-[#fc9704]" />,
+      title: "Vendor & Inventory Management",
+      description:
+        "Our team manages vendor relationships and inventory systems, ensuring you always have essential supplies without overspending.",
+    },
+    {
+      icon: <Stethoscope size={40} className="text-[#fc9704]" />,
+      title: "Doctor Searching & Engagement",
+      description:
+        "We identify and connect you with qualified doctors tailored to your clinic or hospital’s specific requirements and goals.",
+    },
+    {
+      icon: <FileUser size={40} className="text-[#fc9704]" />,
+      title: "Medical Staff Planning, Budgeting & Consulting",
+      description:
+        "We offer strategic planning and budgeting support to hire and manage medical staff within your financial and operational targets.",
     },
   ];
 
   const testimonials = [
     {
-      name: "SinghaniaUniversity Hospital & Research Centre, 500 Bedded Medical College",
+      name: "Pachri",
       title: "Pachri (Rajasthan)",
       quote:
         "https://singhaniauniversity.ac.in/wp-content/uploads/2024/06/WhatsApp-Image-2024-06-25-at-5.45.22-PM.jpeg",
     },
     {
-      name: "Vyas Medical College & Hospital, 850 Bedded Medical College & Hospital)",
+      name: "Jodhpur",
       title: "Jodhpur (Rajasthan)",
       quote: "https://vyasmedicalcollege.com/images/vyaslogo.png",
     },
-    // {
-    //   name: "SardarPatel Hospital, 100 Bedded Hospital",
-    //   title: "Shamgarh (M.P.)",
-    //   quote:
-    //     "https://www.sardarpatelhospital.com/images/logo_header.png",
-    // },
     {
-      name: "DhayalHospital, Reengus, 200 Bedded Hospital",
-      title: "Sikar,(Rajasthan)",
+      name: "Shamgarh",
+      title: "Shamgarh (M.P.)",
+      quote: "https://www.sardarpatelhospital.com/images/logo_header.png",
+    },
+    {
+      name: "Sikar",
+      title: "Sikar (Rajasthan)",
       quote:
         "https://dhayalhospital.com/assets/user/images/resources/logo-web.jpg",
+    },
+    {
+      name: "Dausa",
+      title: "Sikar,(Rajasthan)",
+      quote:
+        "https://navjeevanhospitallalsot.com/wp-content/uploads/2023/09/IMG-20230904-WA0078-removebg-preview-1.png",
+    },
+    {
+      name: "Sri Ganganager",
+      title: "Sikar,(Rajasthan)",
+      quote:
+        "https://www.drsstantiamch.org/web_assets/assets/img/jansewa_logo-1.png",
+    },
+    {
+      name: "Mumbai",
+      title: "Sikar,(Rajasthan)",
+      quote:
+        "https://galaxyhospital.co.in/wp-content/uploads/2023/07/Galaxy-Hospital.png",
+    },
+    {
+      name: "Sikar",
+      title: "Sikar,(Rajasthan)",
+      quote:
+        "https://image1.jdomni.in/storeLogo/12092023/5A/67/FD/6454EFF49F3729678224E174A5_1694523946046.png?output-format=webp",
+    },
+    {
+      name: "Pali",
+      title: "Sikar,(Rajasthan)",
+      quote: "https://bmhosp.org/images/logo.png",
     },
   ];
   return (
     <div className="">
       {/*main Section */}
-      {/* <div
-        id="home"
-        className="bg-gradient-to-br from-slate-50 to-blue-50 py-20 lg:py-32"
-      >
+      <div id="home" className="bg-[#faf9f4]  ">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center">
+          {/* <div className="text-center">
             <h1 className="mb-6 text-blue-800 rounded-full">
-              Leading Executive Search & Talent Solutions
+              R. K. JOB PLACEMENT SERVICE
             </h1>
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-gray-900 mb-8">
               Executive Search &
@@ -97,31 +163,36 @@ const Body = () => {
               organizations. Our expertise in executive search and talent
               advisory drives sustainable growth and success.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a
-                href="https://forms.gle/8KvoZbX8ifixMNHc8"
-                target="_self"
-                rel="noopener noreferrer"
-              >
-                <button className="px-8 py-3 text-lg bg-blue-600 hover:bg-blue-700 text-white cursor-pointer">
-                  Apply Now
-                </button>
-              </a>
-              <button className="px-8 py-3 text-lg border-blue-200 hover:bg-blue-50 bg-white cursor-pointer">
-                Learn More
+          </div> */}
+          <div className="w-full ">
+            <img src={Main_IMG_1} className="w-full h-[550px]" alt="" />
+          </div>
+          <div className="flex flex-col sm:flex-row space-x-80 justify-center">
+            <a
+              href="https://forms.gle/efyZeoQyKt7hccyVA"
+              target="_self"
+              rel="noopener"
+            >
+              <button className="px-8 py-3 text-lg bg-[#fc9704] hover:bg-[#0279ba] text-white cursor-pointer">
+                Jobseeker
               </button>
-            </div>
+            </a>
+            <a href="https://forms.gle/cDLX17SjyuZwamWX9">
+              <button className="px-8 py-3 text-lg border-blue-200 hover:bg-[#0279ba] bg-[#fc9704] text-white cursor-pointer">
+                Employer
+              </button>
+            </a>
           </div>
         </div>
-      </div> */}
-      <ImageCrousel/>
+      </div>
+      {/* <ImageCrousel/> */}
       {/* About Section */}
       <div id="about" className="py-20 lg:py-32 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
-              <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-8">
-                About RK JOB Placement
+              <h2 className="text-2xl md:text-4xl  font-bold text-gray-900 mb-8">
+                R. K. JOB PLACEMENT SERVICE
               </h2>
               <p className="text-lg text-gray-600 mb-6 leading-relaxed">
                 RK JOB Placement is a premier executive search and talent
@@ -136,17 +207,17 @@ const Body = () => {
               <div className="space-y-4">
                 {features.map((feature, index) => (
                   <div key={index} className="flex items-start space-x-3">
-                    <CheckCircle className="h-6 w-6 text-green-500 flex-shrink-0 mt-0.5" />
+                    <CheckCircle className="h-6 w-6 text-[#fc9704] flex-shrink-0 mt-0.5" />
                     <span className="text-gray-700 text-lg">{feature}</span>
                   </div>
                 ))}
               </div>
             </div>
             <div className="relative">
-              <div className="bg-gradient-to-br from-blue-100 to-slate-100 rounded-2xl p-8 lg:p-12">
+              <div className="bg-[#faf9f4] rounded-2xl p-8 lg:p-12">
                 <div className="grid grid-cols-2 gap-8">
                   <div className="text-center">
-                    <div className="text-4xl lg:text-5xl font-bold text-blue-600 mb-2">
+                    <div className="text-4xl lg:text-5xl font-bold text-[#fc9704] mb-2">
                       15+
                     </div>
                     <div className="text-gray-600 font-medium">
@@ -154,7 +225,7 @@ const Body = () => {
                     </div>
                   </div>
                   <div className="text-center">
-                    <div className="text-4xl lg:text-5xl font-bold text-blue-600 mb-2">
+                    <div className="text-4xl lg:text-5xl font-bold text-[#fc9704] mb-2">
                       500+
                     </div>
                     <div className="text-gray-600 font-medium">
@@ -162,7 +233,7 @@ const Body = () => {
                     </div>
                   </div>
                   <div className="text-center">
-                    <div className="text-4xl lg:text-5xl font-bold text-blue-600 mb-2">
+                    <div className="text-4xl lg:text-5xl font-bold text-[#fc9704] mb-2">
                       95%
                     </div>
                     <div className="text-gray-600 font-medium">
@@ -170,7 +241,7 @@ const Body = () => {
                     </div>
                   </div>
                   <div className="text-center">
-                    <div className="text-4xl lg:text-5xl font-bold text-blue-600 mb-2">
+                    <div className="text-4xl lg:text-5xl font-bold text-[#fc9704] mb-2">
                       25
                     </div>
                     <div className="text-gray-600 font-medium">
@@ -181,6 +252,16 @@ const Body = () => {
               </div>
             </div>
           </div>
+        </div>
+      </div>
+      <div className=" max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h1 className="text-center text-3xl md:text-5xl font-bold text-gray-900 mb-6">
+          Photo's
+        </h1>
+        <div className="flex justify-between space-x-10 mt-4">
+          <img src={Main_IMG_4} alt="" className="w-[500px] h-[250px]" />
+          <img src={Main_IMG_2} alt="" className="w-[500px] h-[250px]" />
+          <img src={Main_IMG_3} alt="" className="w-[500px] h-[250px]" />
         </div>
       </div>
       {/* Our Services Section */}
@@ -195,14 +276,14 @@ const Body = () => {
               organization's unique needs and drive sustainable growth.
             </p>
           </div>
-          <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className=" mt-12 grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-5 gap-6">
             {services.map((service, index) => (
               <div
                 key={index}
-                className="bg-white p-6 rounded-2xl hover:shadow-xl transition-all duration-300 hover:-translate-y-2"
+                className="bg-white  p-6 rounded-2xl hover:shadow-xl transition-all duration-300 hover:-translate-y-2"
               >
                 <div className="flex justify-center mb-4">
-                  <div className="bg-blue-100 p-3 rounded-full">
+                  <div className="bg-[#666162] p-3 rounded-full">
                     {service.icon}
                   </div>
                 </div>
@@ -237,20 +318,27 @@ const Body = () => {
                 >
                   <img src={t.quote} className="h-24 w-80" />
                   <h4 className="font-bold text-gray-900">{t.name}</h4>
-                  <p className="text-sm text-gray-500">{t.title}</p>
-                  <div className="flex mb-4 text-yellow-400">
-                    {Array.from({ length: 5 }).map((_, i) => (
-                      <Star key={i} fill="currentColor" className="w-5 h-5" />
-                    ))}
-                  </div>
+                  {/* <p className="text-sm text-gray-500">{t.title}</p> */}
                 </div>
               ))}
             </div>
           </div>
         </div>
       </div>
-      {/*Get into touch */}
+      {/* <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center ">
+          <h2 className="text-xl font-bold mb-5">
+            Download Our Testimonial Letter
+          </h2>
+          <a href="/testimonial.pdf" download="Testimonial.pdf">
+            <button className="px-4 py-2 bg-blue-600 text-white rounded">
+              Download Testimonial
+            </button>
+          </a>
+        </div>
+      </div> */}
 
+      {/*Get into touch */}
       <section id="contact" className="py-16 bg-gray-50">
         <div className="max-w-6xl mx-auto px-4">
           <div className="text-center mb-12">
@@ -284,7 +372,7 @@ const Body = () => {
               <h3 className="text-xl font-bold mb-4">Contact Information</h3>
               <ul className="space-y-4 text-gray-700">
                 <li className="flex items-start gap-3">
-                  <Mail className="text-blue-600" />
+                  <Mail className="text-[#fc9704]" />
                   <div>
                     <strong>Email</strong>
                     <br />
@@ -292,7 +380,7 @@ const Body = () => {
                   </div>
                 </li>
                 <li className="flex items-start gap-3">
-                  <Phone className="text-blue-600" />
+                  <Phone className="text-[#fc9704]" />
                   <div>
                     <strong>Phone</strong>
                     <br />
@@ -300,7 +388,7 @@ const Body = () => {
                   </div>
                 </li>
                 <li className="flex items-start gap-3">
-                  <MapPin className="text-blue-600" />
+                  <MapPin className="text-[#fc9704]" />
                   <div>
                     <strong>Address</strong>
                     <br />
