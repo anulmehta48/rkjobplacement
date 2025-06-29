@@ -1,17 +1,17 @@
 import { LOGO_IMG } from "../config";
 const Title = () => {
   return (
-    <div>
+    <div className="flex"> 
       <a href="/">
-        <img className="w-24" src={LOGO_IMG} alt="logo" />
+        <img className=" w-20  " src={LOGO_IMG} alt="logo" />
       </a>
-      {/* <h1 className="text-sm ">RK PLACEMENT SERVICES</h1> */}
+      <h1 className="text-3xl mt-5  text-[#484746]">Job Placement Services</h1>
     </div>
   );
 };
 const Header = () => {
   return (
-    <div className="bg-white shadow-2xs  sticky top-0  flex-wrap z-[30]">
+    <div className="bg-[#faf9f4] shadow-2xs  sticky top-0  flex-wrap z-[30]">
       <div className="max-w-7xl mx-auto ">
         <div className=" flex justify-between ">
           <Title />
@@ -29,8 +29,8 @@ const Header = () => {
               <a href="#contact">
                 <li className="p-5 cursor-pointer">Contact</li>
               </a>
-              <a href="mailto:abc@gmail.com">
-                <button className=" px-8 py-4 text-lg bg-blue-600 text-white cursor-pointer ">
+              <a href="mailto:rkjobpl7@gmail.com">
+                <button className="px-8 py-2.5 text-lg mt-3 bg-[#f48734] text-white cursor-pointer">
                   Get Started
                 </button>
               </a>

@@ -1,5 +1,9 @@
+import ImageCrousel from "./Crousel";
 import {
   Users,
+  NotebookPen,
+  IndianRupee,
+  BriefcaseMedical,
   Award,
   Target,
   Globe,
@@ -21,55 +25,60 @@ const Body = () => {
 
   const services = [
     {
-      icon: <Users size={40} className="text-blue-600" />,
-      title: "Executive Search",
+      icon: <NotebookPen size={40} className="text-blue-600" />,
+      title: "Project Planning & Feasibility",
       description:
-        "Finding top-tier executives and senior leadership talent across industries and geographies.",
+        "We create detailed project reports and perform feasibility studies to ensure your healthcare venture starts on solid ground.",
     },
     {
-      icon: <Award size={40} className="text-blue-600" />,
-      title: "Professional Recruitment",
+      icon: <IndianRupee size={40} className="text-blue-600" />,
+      title: " Financial & Manpower Planning",
       description:
-        "Comprehensive recruitment services for mid to senior-level professionals.",
+        "Get expert support with budgeting, financial projections, and planning your medical team structure for smooth operations.",
     },
     {
       icon: <Target size={40} className="text-blue-600" />,
-      title: "Talent Advisory",
+      title: "Operations & Vendor Management",
       description:
-        "Strategic talent consulting and workforce planning solutions for organizations.",
+        "We streamline your hospital or clinic’s day-to-day operations, including vendor coordination and inventory control.",
     },
     {
-      icon: <Globe size={40} className="text-blue-600" />,
-      title: "Global Talent Solutions",
+      icon: <BriefcaseMedical size={40} className="text-blue-600" />,
+      title: "Doctor & Staff Placement",
       description:
-        "International recruitment and talent acquisition across multiple markets.",
+        "We help you find and engage qualified doctors and medical staff, tailored to your specific requirements and budget.",
     },
   ];
 
   const testimonials = [
     {
-      name: "David Chen",
-      title: "CEO, Innovation Corp",
+      name: "SinghaniaUniversity Hospital & Research Centre, 500 Bedded Medical College",
+      title: "Pachri (Rajasthan)",
       quote:
-        "RK JOB Placement delivered exceptional results. They understood our culture and found the perfect leadership team.",
+        "https://singhaniauniversity.ac.in/wp-content/uploads/2024/06/WhatsApp-Image-2024-06-25-at-5.45.22-PM.jpeg",
     },
     {
-      name: "Sarah Williams",
-      title: "HR Director, Global Industries",
-      quote:
-        "Professional, efficient, and results-driven. RK JOB Placement exceeded our expectations in every way.",
+      name: "Vyas Medical College & Hospital, 850 Bedded Medical College & Hospital)",
+      title: "Jodhpur (Rajasthan)",
+      quote: "https://vyasmedicalcollege.com/images/vyaslogo.png",
     },
+    // {
+    //   name: "SardarPatel Hospital, 100 Bedded Hospital",
+    //   title: "Shamgarh (M.P.)",
+    //   quote:
+    //     "https://www.sardarpatelhospital.com/images/logo_header.png",
+    // },
     {
-      name: "Michael Johnson",
-      title: "Founder, TechStart",
+      name: "DhayalHospital, Reengus, 200 Bedded Hospital",
+      title: "Sikar,(Rajasthan)",
       quote:
-        "Outstanding service and deep industry knowledge. They found us game-changing talent quickly.",
+        "https://dhayalhospital.com/assets/user/images/resources/logo-web.jpg",
     },
   ];
   return (
     <div className="">
       {/*main Section */}
-      <div
+      {/* <div
         id="home"
         className="bg-gradient-to-br from-slate-50 to-blue-50 py-20 lg:py-32"
       >
@@ -89,16 +98,23 @@ const Body = () => {
               advisory drives sustainable growth and success.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="px-8 py-4 text-lg bg-blue-600 hover:bg-blue-700 text-white">
-                Find Talent
-              </button>
-              <button className="px-8 py-4 text-lg border-blue-200 hover:bg-blue-50 bg-white">
+              <a
+                href="https://forms.gle/8KvoZbX8ifixMNHc8"
+                target="_self"
+                rel="noopener noreferrer"
+              >
+                <button className="px-8 py-3 text-lg bg-blue-600 hover:bg-blue-700 text-white cursor-pointer">
+                  Apply Now
+                </button>
+              </a>
+              <button className="px-8 py-3 text-lg border-blue-200 hover:bg-blue-50 bg-white cursor-pointer">
                 Learn More
               </button>
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
+      <ImageCrousel/>
       {/* About Section */}
       <div id="about" className="py-20 lg:py-32 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -213,20 +229,20 @@ const Body = () => {
               worldwide.
             </p>
 
-            <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 ">
               {testimonials.map((t, index) => (
                 <div
                   key={index}
-                  className="bg-white p-6 rounded-2xl shadow hover:shadow-md transition text-left"
+                  className="bg-white p-6 justify-center rounded-2xl shadow hover:shadow-md transition text-left"
                 >
+                  <img src={t.quote} className="h-24 w-80" />
+                  <h4 className="font-bold text-gray-900">{t.name}</h4>
+                  <p className="text-sm text-gray-500">{t.title}</p>
                   <div className="flex mb-4 text-yellow-400">
                     {Array.from({ length: 5 }).map((_, i) => (
                       <Star key={i} fill="currentColor" className="w-5 h-5" />
                     ))}
                   </div>
-                  <p className="italic text-gray-700 mb-4">"{t.quote}"</p>
-                  <h4 className="font-bold text-gray-900">{t.name}</h4>
-                  <p className="text-sm text-gray-500">{t.title}</p>
                 </div>
               ))}
             </div>
@@ -249,18 +265,18 @@ const Body = () => {
             {/* Contact Image + Button */}
             <div className="bg-white p-6 rounded-2xl shadow h-[480px] flex flex-col justify-center items-center">
               <img
-                src="https://wallpapers.com/images/hd/customer-support-contact-us-illustration-11aicfhwnyfusfzk.png"
+                src="https://res.cloudinary.com/ds3kl5cs2/image/upload/v1750698043/d062ca90-d59c-4d6c-b13b-5f9acd48fee6_jiqec4.png"
                 alt="Contact Us"
-                className="max-h-52 object-contain mb-6"
+                className=" object-contain mb-6"
               />
-              <a
-                href="https://forms.gle/5QnBku5SRv4yvTDr7"
+              {/* <a
+                href="https://forms.gle/8KvoZbX8ifixMNHc8"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-blue-600 text-white font-semibold py-3 px-6 rounded-md hover:bg-blue-700 transition"
               >
                 Contact Now
-              </a>
+              </a> */}
             </div>
 
             {/* Contact Info */}
@@ -272,7 +288,7 @@ const Body = () => {
                   <div>
                     <strong>Email</strong>
                     <br />
-                    info@rkjobplacement.com
+                    rkjobpl7@gmail.com
                   </div>
                 </li>
                 <li className="flex items-start gap-3">
@@ -280,7 +296,7 @@ const Body = () => {
                   <div>
                     <strong>Phone</strong>
                     <br />
-                    +91 7845128956
+                    +91 8905406622, 8278645350, 7837332642
                   </div>
                 </li>
                 <li className="flex items-start gap-3">
@@ -288,11 +304,11 @@ const Body = () => {
                   <div>
                     <strong>Address</strong>
                     <br />
-                    123 Executive Plaza
+                    1st Office : 49, Gurunanakpura, Raja park, Jaipur (Raj.)
+                    302004.
                     <br />
-                    Suite 500
-                    <br />
-                    New Delhi 405214
+                    2nd Office : VrindavanNagar, Krishnapuri,
+                    Madanganj-Kishangarh, Dist-Ajmer (Raj.) 305801.
                   </div>
                 </li>
               </ul>
