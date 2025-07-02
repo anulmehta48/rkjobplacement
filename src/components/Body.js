@@ -164,22 +164,23 @@ const Body = () => {
               advisory drives sustainable growth and success.
             </p>
           </div> */}
-          <div className="w-full ">
-            <img src={Main_IMG_1} className="w-full h-[550px]" alt="" />
+          <div className=" ">
+            <img src={Main_IMG_1} className="" alt="png" />
           </div>
-          <div className="flex flex-col sm:flex-row space-x-80 justify-center">
+          <div className="flex flex-col  md:gap-2 md:flex  sm:flex-row md:space-x-80 justify-center">
             <a
               href="https://forms.gle/efyZeoQyKt7hccyVA"
               target="_self"
               rel="noopener"
             >
-              <button className="px-8 py-3 text-lg bg-[#fc9704] hover:bg-[#0279ba] text-white cursor-pointer">
+              <button className="px-36 md:px-16 py-3 text-lg font-bold bg-[#fc9704] hover:bg-[#0279ba] text-white cursor-pointer">
                 Jobseeker
               </button>
             </a>
+            <br/>
             <a href="https://forms.gle/cDLX17SjyuZwamWX9">
-              <button className="px-8 py-3 text-lg border-blue-200 hover:bg-[#0279ba] bg-[#fc9704] text-white cursor-pointer">
-                Employer
+              <button className="px-36 md:px-16 py-3 text-lg font-bold border-blue-200 hover:bg-[#0279ba] bg-[#fc9704] text-white cursor-pointer">
+                Employer&nbsp;
               </button>
             </a>
           </div>
@@ -254,18 +255,30 @@ const Body = () => {
           </div>
         </div>
       </div>
-      <div className=" max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="  mx-auto px-4  lg:px-8">
         <h1 className="text-center text-3xl md:text-5xl font-bold text-gray-900 mb-6">
           Photo's
         </h1>
-        <div className="flex justify-between space-x-10 mt-4">
-          <img src={Main_IMG_4} alt="" className="w-[500px] h-[250px]" />
-          <img src={Main_IMG_2} alt="" className="w-[500px] h-[250px]" />
-          <img src={Main_IMG_3} alt="" className="w-[500px] h-[250px]" />
+        <div className="md:flex md:justify-center gap-8 ">
+          <img
+            src={Main_IMG_4}
+            alt=""
+            className="w-[500px] md:w-[300px]  h-[250px] py-3"
+          />
+          <img
+            src={Main_IMG_2}
+            alt=""
+            className="w-[500px] md:w-[300px]  h-[250px] py-3"
+          />
+          <img
+            src={Main_IMG_3}
+            alt=""
+            className="w-[500px] md:w-[300px]  h-[250px] py-3"
+          />
         </div>
       </div>
       {/* Our Services Section */}
-      <div id="services" className="py-20 lg:py-32 bg-slate-50">
+      <div id="services" className="py-20 lg:py-32 bg-[#faf9f4]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-6">
@@ -276,7 +289,7 @@ const Body = () => {
               organization's unique needs and drive sustainable growth.
             </p>
           </div>
-          <div className=" mt-12 grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-5 gap-6">
+          <div className="md:mt-12 md:grid md:grid-cols-2 sm:grid-cols-2 lg:grid-cols-5 gap-6">
             {services.map((service, index) => (
               <div
                 key={index}
@@ -303,7 +316,7 @@ const Body = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-6">
-              What Our Clients Say
+              Our Clients
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
               Trusted by industry leaders and innovative organizations
@@ -314,10 +327,12 @@ const Body = () => {
               {testimonials.map((t, index) => (
                 <div
                   key={index}
-                  className="bg-white p-6 justify-center rounded-2xl shadow hover:shadow-md transition text-left"
+                  className="bg-[#faf9f4] p-6 justify-center rounded-2xl shadow hover:shadow-md transition text-left py-12 "
                 >
-                  <img src={t.quote} className="h-24 w-80" />
-                  <h4 className="font-bold text-gray-900">{t.name}</h4>
+                  <img src={t.quote} className="h-40 w-80 object-contain" />
+                  <h4 className="font-bold text-center text-2xl text-gray-900">
+                    {t.name}
+                  </h4>
                   {/* <p className="text-sm text-gray-500">{t.title}</p> */}
                 </div>
               ))}
@@ -339,7 +354,7 @@ const Body = () => {
       </div> */}
 
       {/*Get into touch */}
-      <section id="contact" className="py-16 bg-gray-50">
+      <section id="contact" className="py-16 bg-[3faf9f4]">
         <div className="max-w-6xl mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold text-gray-900">Get In Touch</h2>

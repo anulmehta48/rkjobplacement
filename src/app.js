@@ -5,12 +5,14 @@ import Body from "./components/Body";
 import Footer from "./components/Footer";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import About from "./components/About";
+import WhatsApp from "./components/WhatsApp";
 
 const AppLayout = () => {
   return (
     <>
       <Header />
       <Body />
+      <WhatsApp/>
       <Footer />
     </>
   );
