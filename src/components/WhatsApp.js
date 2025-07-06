@@ -1,7 +1,7 @@
 const WhatsApp = () => {
   return (
     <a
-      href="https://api.whatsapp.com/send?phone=919782063740&text=Hi"
+      href="https://api.whatsapp.com/send?phone=918905406622&text=Hi"
       target="_blank"
       rel="noopener noreferrer"
       className="fixed bottom-5 right-5 bg-green-500 rounded-full p-4 shadow-lg z-50 hover:bg-green-600"

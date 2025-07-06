@@ -104,9 +104,10 @@ const Body = () => {
       quote: "https://vyasmedicalcollege.com/images/vyaslogo.png",
     },
     {
-      name: "Shamgarh",
+      name: "Jaipur",
       title: "Shamgarh (M.P.)",
-      quote: "https://www.sardarpatelhospital.com/images/logo_header.png",
+      quote:
+        "https://cdn-images-1.medium.com/v2/resize:fit:1200/1*16Jw3fGZZFryvXH4Fu2UzQ.png",
     },
     {
       name: "Sikar",
@@ -164,20 +165,24 @@ const Body = () => {
               advisory drives sustainable growth and success.
             </p>
           </div> */}
-          <div className=" ">
-            <img src={Main_IMG_1} className="" alt="png" />
+          <div className="">
+            <img
+              src={Main_IMG_1}
+              className="lg:w-[1250px] lg:h-[550px] object-contain"
+              alt="png"
+            />
           </div>
-          <div className="flex flex-col  md:gap-2 md:flex  sm:flex-row md:space-x-80 justify-center">
+          <div className="flex flex-col  md:gap-2 md:flex items-center justify-center sm:flex-row md:space-x-80 mx-auto ">
             <a
               href="https://forms.gle/efyZeoQyKt7hccyVA"
               target="_self"
               rel="noopener"
             >
-              <button className="px-36 md:px-16 py-3 text-lg font-bold bg-[#fc9704] hover:bg-[#0279ba] text-white cursor-pointer">
+              <button className="px-36 md:px-16 py-3 text-lg font-bold bg-[#0279ba] hover:bg-[#fc9704] text-white cursor-pointer">
                 Jobseeker
               </button>
             </a>
-            <br/>
+            <br />
             <a href="https://forms.gle/cDLX17SjyuZwamWX9">
               <button className="px-36 md:px-16 py-3 text-lg font-bold border-blue-200 hover:bg-[#0279ba] bg-[#fc9704] text-white cursor-pointer">
                 Employer&nbsp;
@@ -246,7 +251,7 @@ const Body = () => {
                       25
                     </div>
                     <div className="text-gray-600 font-medium">
-                      Countries Served
+                      State Served
                     </div>
                   </div>
                 </div>
@@ -399,7 +404,7 @@ const Body = () => {
                   <div>
                     <strong>Phone</strong>
                     <br />
-                    +91 8905406622, 8278645350, 7837332642
+                    +91 8905406622, 8278645350 ,9680730570
                   </div>
                 </li>
                 <li className="flex items-start gap-3">
@@ -419,13 +424,12 @@ const Body = () => {
               <h4 className="text-lg font-semibold mt-10 mb-2">Office Hours</h4>
               <div className="text-gray-700 space-y-1">
                 <p>
-                  Monday - Friday: <strong>9:00 AM - 6:00 PM</strong>
+                  <strong> We are available 24/7</strong>
                 </p>
                 <p>
-                  Saturday: <strong>10:00 AM - 2:00 PM</strong>
-                </p>
-                <p>
-                  Sunday: <strong>Closed</strong>
+                  <strong>
+                    In case of any emergency <br /> connect with us on WhatsApp
+                  </strong>
                 </p>
               </div>
             </div>

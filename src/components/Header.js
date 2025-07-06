@@ -1,15 +1,19 @@
-import { Menu } from "lucide-react";
+
 import { LOGO_IMG } from "../config";
 const Title = () => {
   return (
-    <div className="flex justify-between items-center">
+    <div className="flex justify-center items-center mx-auto ">
       <a href="/">
         <img className="w-16 md:w-20 " src={LOGO_IMG} alt="logo" />
       </a>
-      <h1 className=" text-2xl md:text-3xl font-semibold text-[#0279ba] ">
+      <h1 className="text-xl md:text-3xl font-semibold text-[#0279ba] mr-1">
         Job Placement Services
       </h1>
-      <Menu className="ml-5 md:hidden lg:hidden size-10 text-[#fc9704]" />
+      <a href="mailto:rkjobpl7@gmail.com">
+        <button className="md:hidden px-8 py-3 rounded-3xl bg-[#fc9704] hover:bg-[#0279ba] text-white cursor-pointer ">
+          Email
+        </button>
+      </a>
     </div>
   );
 };
@@ -34,8 +38,8 @@ const Header = () => {
                 <li className="p-5 cursor-pointer">Contact</li>
               </a>
               <a href="mailto:rkjobpl7@gmail.com">
-                <button className="px-8 py-2.5 text-lg mt-3 bg-[#fc9704] hover:bg-[#0279ba] text-white cursor-pointer">
-                  Get Started
+                <button className="email-button px-8 py-2.5 text-lg mt-3 bg-[#fc9704] hover:bg-[#0279ba] text-white cursor-pointer ">
+                  Email Us
                 </button>
               </a>
             </ul>
