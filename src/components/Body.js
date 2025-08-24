@@ -174,7 +174,7 @@ const Body = () => {
           </div>
           <div className="flex flex-col  md:gap-2 md:flex items-center justify-center sm:flex-row md:space-x-80 mx-auto ">
             <a
-              href="https://forms.gle/efyZeoQyKt7hccyVA"
+              href=" https://forms.gle/98UAHLWuEtqBdDUGA"
               target="_self"
               rel="noopener"
             >
@@ -183,7 +183,7 @@ const Body = () => {
               </button>
             </a>
             <br />
-            <a href="https://forms.gle/cDLX17SjyuZwamWX9">
+            <a href=" https://forms.gle/4p48jdpBrS8KgJtH9">
               <button className="px-36 md:px-16 py-3 text-lg font-bold border-blue-200 hover:bg-[#0279ba] bg-[#fc9704] text-white cursor-pointer">
                 Employer&nbsp;
               </button>
